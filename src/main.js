@@ -13,9 +13,9 @@ export default class App {
     contarImparesFor(inicio, fin){
         let impar = 0
 
-        for(let i = inicio; i <= fin; i = i + 1){
+        for(let i = inicio; i <= fin; i ++){
             if(i % 2 != 0){
-                impar = impar + 1;
+                impar++;
             }
         }
         return impar;
