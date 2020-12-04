@@ -26,10 +26,25 @@ export default class App {
         }
         return impar;
     }
+    sumarParesWhile(){
+
+        let i = 1;
+        let suma = 0;
+
+        while(i <= 20){
+
+            if(i % 2 === 0){
+                suma = suma + i;
+            }
+            
+            i = i + 1;
+        }
+
+        return suma;
+    }
 
 }
 
 let app = new App();
 
-console.log(app.sumarParesFor());
-console.log(app.contarImparesFor(11, 5));
+console.log(app.sumarParesWhile());
